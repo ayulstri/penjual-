@@ -24,7 +24,7 @@ const firebaseConfig = {
 // Inisialisasi Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
+//fungsi untuk menampilkan data dari data base
 export async function ambilDaftarPenjual() {
   const refDokumen = collection(db, "penjual");
   const kueri = query(refDokumen, orderBy("nama"));
@@ -43,7 +43,7 @@ export async function ambilDaftarPenjual() {
   
   return hasil;
 }
-
+//####№############33333$$##$$$$$$$##$$$
 export function formatAngka(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
